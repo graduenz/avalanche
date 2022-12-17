@@ -11,7 +11,7 @@ public class Pipeline : IPipeline
         _metadata = metadata;
     }
 
-    public async Task<PipelineResult> ExecuteAsync(Guid uniqueId, string name, Stream baseStream)
+    public Task<PipelineResult> ExecuteAsync(Guid uniqueId, string name, Stream baseStream)
     {
         if (uniqueId == Guid.Empty)
             throw new ArgumentException($"Parameter {nameof(uniqueId)} can't be an empty Guid", nameof(uniqueId));
@@ -21,7 +21,12 @@ public class Pipeline : IPipeline
 
         if (baseStream == null)
             throw new ArgumentNullException(nameof(baseStream));
-        
+
+        return ExecuteInternalAsync(uniqueId, name, baseStream);
+    }
+
+    private async Task<PipelineResult> ExecuteInternalAsync(Guid uniqueId, string name, Stream baseStream)
+    {
         var operationStack = new Stack<PipelineOperationDelegate>();
         operationStack.Push(_ => Task.CompletedTask);
         
