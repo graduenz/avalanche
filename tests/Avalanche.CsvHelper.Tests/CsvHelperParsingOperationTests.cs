@@ -31,7 +31,7 @@ public class CsvHelperParsingOperationTests : AvalancheTestCase
         result.Items.Should().BeEquivalentTo(expectedItems);
     }
 
-    private IList<Employee> ParseCsvManually(Stream baseStream, char delimiter)
+    private static IList<Employee> ParseCsvManually(Stream baseStream, char delimiter)
     {
         baseStream.Seek(0, SeekOrigin.Begin);
 
