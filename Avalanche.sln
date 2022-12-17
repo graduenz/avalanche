@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "implementations", "implemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.EntityFrameworkCore", "src\implementations\Avalanche.EntityFrameworkCore\Avalanche.EntityFrameworkCore.csproj", "{EF7AC4D9-78A4-4A77-A287-53BEDCDA7BCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.CsvHelper", "src\implementations\Avalanche.CsvHelper\Avalanche.CsvHelper.csproj", "{40A9B594-8A0B-4D94-9B66-A6C4018300AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,7 @@ Global
 		{76778A12-FDEB-4C54-A848-76DC34742AB8} = {65634623-4B26-458A-9AAB-AAAFEBF0A962}
 		{1141CEDA-A06F-4F21-ADA3-C83020C679CC} = {F11CBBA8-979E-4B4B-86CD-51D0B893A519}
 		{EF7AC4D9-78A4-4A77-A287-53BEDCDA7BCA} = {1141CEDA-A06F-4F21-ADA3-C83020C679CC}
+		{40A9B594-8A0B-4D94-9B66-A6C4018300AB} = {1141CEDA-A06F-4F21-ADA3-C83020C679CC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B249B189-0BAC-4BB7-9B74-B5768B7BEE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,5 +49,9 @@ Global
 		{EF7AC4D9-78A4-4A77-A287-53BEDCDA7BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF7AC4D9-78A4-4A77-A287-53BEDCDA7BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF7AC4D9-78A4-4A77-A287-53BEDCDA7BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40A9B594-8A0B-4D94-9B66-A6C4018300AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40A9B594-8A0B-4D94-9B66-A6C4018300AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40A9B594-8A0B-4D94-9B66-A6C4018300AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40A9B594-8A0B-4D94-9B66-A6C4018300AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
