@@ -24,14 +24,14 @@ public class PipelineTests : AvalancheTestCase
     [Theory]
     [InlineData(null)]
     [InlineData("")]
-    public async Task ExecuteAsync_WhenNameIsEmpty_Throws(string name)
+    public async Task ExecuteAsync_WhenNameIsEmpty_Throws(string actualName)
     {
         // Arrange
         var pipeline = PipelineFactory.SetupPipeline().Build();
 
         // Act
         var act = async () =>
-            await pipeline.ExecuteAsync(Guid.NewGuid(), name, TestUtils.GetSharedEmbeddedResource(Employees50));
+            await pipeline.ExecuteAsync(Guid.NewGuid(), actualName, TestUtils.GetSharedEmbeddedResource(Employees50));
 
         // Assert
         await act.Should().ThrowAsync<ArgumentNullException>()
