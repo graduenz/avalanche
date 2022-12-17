@@ -28,7 +28,7 @@ dotnet sonarscanner begin \
     /d:sonar.cs.vstest.reportsPaths="**/*/*.trx" \
     /d:sonar.exclusions="samples/**/*.cs"
 
-dotnet build ./src/apps/Charity.Api
+dotnet build
 ./scripts/start-tests.sh
 
 # Now we can collect the results 👍
