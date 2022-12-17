@@ -17,7 +17,7 @@ public class PipelineBuilder : IPipelineBuilder
 
     public IPipelineBuilder WithMetadata(string name, string value)
     {
-        if (name == null)
+        if (string.IsNullOrEmpty(name))
             throw new ArgumentNullException(nameof(name));
 
         _metadata[name] = value;

@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.CsvHelper.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Tests.Shared", "tests\Avalanche.Tests.Shared\Avalanche.Tests.Shared.csproj", "{4CD71212-975B-4C75-B886-83F51056B62F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Core.Tests", "tests\Avalanche.Core.Tests\Avalanche.Core.Tests.csproj", "{64C15599-06D8-4740-A45B-9E575C9913BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,7 @@ Global
 		{40A9B594-8A0B-4D94-9B66-A6C4018300AB} = {1141CEDA-A06F-4F21-ADA3-C83020C679CC}
 		{F8A392AE-4D7B-4646-9C58-83D1D3C8297D} = {894D929D-8712-4EFF-A5FE-1CB70048DB6B}
 		{4CD71212-975B-4C75-B886-83F51056B62F} = {894D929D-8712-4EFF-A5FE-1CB70048DB6B}
+		{64C15599-06D8-4740-A45B-9E575C9913BF} = {894D929D-8712-4EFF-A5FE-1CB70048DB6B}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B249B189-0BAC-4BB7-9B74-B5768B7BEE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -67,5 +70,9 @@ Global
 		{4CD71212-975B-4C75-B886-83F51056B62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD71212-975B-4C75-B886-83F51056B62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD71212-975B-4C75-B886-83F51056B62F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C15599-06D8-4740-A45B-9E575C9913BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C15599-06D8-4740-A45B-9E575C9913BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C15599-06D8-4740-A45B-9E575C9913BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C15599-06D8-4740-A45B-9E575C9913BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
