@@ -1,10 +1,12 @@
 ﻿using System.Globalization;
 using CsvHelper;
+using CsvHelper.Configuration;
 
 namespace Avalanche.CsvHelper;
 
-public class CsvHelperParsingOperation<TModel> : IPipelineOperation
+public class CsvHelperParsingOperation<TModel, TClassMap> : IPipelineOperation
     where TModel : IStreamingItem
+    where TClassMap : ClassMap<TModel>
 {
     private readonly Func<StreamReader, CsvReader> _csvReaderFactory;
 
@@ -23,9 +25,11 @@ public class CsvHelperParsingOperation<TModel> : IPipelineOperation
         
         using var reader = new StreamReader(context.BaseStream, leaveOpen: true);
         using var csv = _csvReaderFactory(reader);
-        var records = csv.GetRecords<TModel>();
-
+        csv.Context.RegisterClassMap<TClassMap>();
+        
         context.Items.Clear();
+
+        var records = csv.GetRecords<TModel>();
         foreach (var record in records)
             context.Items.Add(record);
 
