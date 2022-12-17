@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{65634623-4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.DependencyInjection", "src\core\Avalanche.DependencyInjection\Avalanche.DependencyInjection.csproj", "{BA290365-BB52-4B77-835D-F8BD300B59A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalanche.Entities", "src\core\Avalanche.Entities\Avalanche.Entities.csproj", "{76778A12-FDEB-4C54-A848-76DC34742AB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,7 @@ Global
 		{65634623-4B26-458A-9AAB-AAAFEBF0A962} = {F11CBBA8-979E-4B4B-86CD-51D0B893A519}
 		{B249B189-0BAC-4BB7-9B74-B5768B7BEE93} = {65634623-4B26-458A-9AAB-AAAFEBF0A962}
 		{BA290365-BB52-4B77-835D-F8BD300B59A5} = {65634623-4B26-458A-9AAB-AAAFEBF0A962}
+		{76778A12-FDEB-4C54-A848-76DC34742AB8} = {65634623-4B26-458A-9AAB-AAAFEBF0A962}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B249B189-0BAC-4BB7-9B74-B5768B7BEE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -29,5 +32,9 @@ Global
 		{BA290365-BB52-4B77-835D-F8BD300B59A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA290365-BB52-4B77-835D-F8BD300B59A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA290365-BB52-4B77-835D-F8BD300B59A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76778A12-FDEB-4C54-A848-76DC34742AB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76778A12-FDEB-4C54-A848-76DC34742AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76778A12-FDEB-4C54-A848-76DC34742AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76778A12-FDEB-4C54-A848-76DC34742AB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
