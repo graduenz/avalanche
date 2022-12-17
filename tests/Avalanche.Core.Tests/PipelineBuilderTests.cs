@@ -37,13 +37,13 @@ public class PipelineBuilderTests
     [Theory]
     [InlineData(null)]
     [InlineData("")]
-    public void WithMetadata_WhenNameIsEmpty_Throws(string name)
+    public void WithMetadata_WhenNameIsEmpty_Throws(string actualName)
     {
         // Arrange
         var pipelineBuilder = new PipelineBuilder();
         
         // Act
-        var act = () => pipelineBuilder.WithMetadata(name, "val");
+        var act = () => pipelineBuilder.WithMetadata(actualName, "val");
 
         // Assert
         act.Should()
